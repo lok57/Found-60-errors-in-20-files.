@@ -1,0 +1,40 @@
+{
+  "common": {
+    "search": "Search",
+    "cart": "Cart",
+    "profile": "Profile",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "description": "Description",
+    "specifications": "Specifications",
+    "reviews": "Reviews"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "checkout": "Checkout",
+    "remove": "Remove"
+  },
+  "chatbot": {
+    "title": "Customer Support",
+    "placeholder": "Type your message...",
+    "greeting": "Hello! How can I help you today?",
+    "loading": "Loading..."
+  },
+  "recommendations": {
+    "title": "Recommended for You",
+    "based_on": "Based on your browsing history"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  }
+}

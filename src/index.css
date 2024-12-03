@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply antialiased text-primary-900 bg-primary-50;
+  }
+
+  /* Custom Fonts */
+  h1 {
+    @apply font-elegant;
+  }
+
+  h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Form Styles */
+  input, select, textarea {
+    @apply transition-all duration-200 font-heading;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    @apply ring-2 ring-accent-500 ring-offset-2 ring-offset-gray-900;
+  }
+
+  /* Button Animations */
+  .btn-glow {
+    @apply relative overflow-hidden;
+  }
+
+  .btn-glow::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full;
+    animation: glow 2s infinite;
+  }
+
+  @keyframes glow {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Typing Animation */
+  .typing {
+    border-right: 2px solid;
+    animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: currentColor }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent-700;
+}
